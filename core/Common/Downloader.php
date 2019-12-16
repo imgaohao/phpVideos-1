@@ -232,6 +232,8 @@ class Downloader
             CURLOPT_HEADER => false,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_AUTOREFERER => true,
+            CURLOPT_SSL_VERIFYHOST => false,
+            CURLOPT_SSL_VERIFYPEER => false,
             CURLOPT_HTTPHEADER => [
                 "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 //                "Accept-Encoding: gzip, deflate, br",

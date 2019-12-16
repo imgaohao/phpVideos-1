@@ -88,6 +88,8 @@ class Curl
             CURLOPT_URL => $url,
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_SSL_VERIFYHOST => false,
+            CURLOPT_SSL_VERIFYPEER => false,
             CURLOPT_REFERER => $httpReferer,
             CURLOPT_USERAGENT => Config::instance()->get('user_agent'),
             CURLOPT_HTTPHEADER => [
